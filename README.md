@@ -55,20 +55,25 @@ GRANT SELECT ON laboratorio.* TO 'app_user'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
-> GRANT ALL PRIVILEGES: Le das permiso para hacer todo (leer, escribir, borrar, crear).
-> ON laboratorio.*: Esto significa: "En la base de datos llamada seguridad, y en todas sus tablas (el asterisco *)". El usuario no podrá ver otras bases de datos del sistema, solo la suya.
-> FLUSH PRIVILEGES: Este comando es como darle al botón de "Guardar cambios" o "Refrescar".
+**GRANT ALL PRIVILEGES:** Le das permiso para hacer todo (leer, escribir, borrar, crear).
+**ON laboratorio.*:** Esto significa: "En la base de datos llamada laboratorio, y en todas sus tablas (el asterisco *)". El usuario no podrá ver otras bases de datos del sistema, solo la suya.
+**FLUSH PRIVILEGES:** Este comando es como darle al botón de "Guardar cambios" o "Refrescar".
 
 > MySQL guarda los permisos en unas tablas internas. A veces, si no ejecutas este comando, MySQL sigue usando la configuración vieja y el usuario nuevo no puede entrar. Con esto, obligas a la base de datos a leer los nuevos permisos de inmediato.
 
-#Con estos comandos puede validar que tu usuario fue creado correctamente
+# Con estos comandos puede validar que tu usuario fue creado correctamente
 
 ## Trae el usuario recien creado
-`SELECT user, host FROM mysql.user;`
+```sql
+SELECT user, host FROM mysql.user;
+```
 ## Valida los permisos
-`SHOW GRANTS FOR 'app_user'@'localhost';`
+```sql SHOW GRANTS FOR 'app_user'@'localhost';
+```
 ## Ingresar con el usuario nuevo
-`mysql -u web_user -p`
+```sql 
+mysql -u web_user -p
+```
 
 🛠️ 3. Comandos Básicos de Consulta
 
