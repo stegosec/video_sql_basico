@@ -56,7 +56,9 @@ FLUSH PRIVILEGES;
 ```
 
 **GRANT ALL PRIVILEGES:** Le das permiso para hacer todo (leer, escribir, borrar, crear).
+
 **ON laboratorio.*:** Esto significa: "En la base de datos llamada laboratorio, y en todas sus tablas (el asterisco *)". El usuario no podrá ver otras bases de datos del sistema, solo la suya.
+
 **FLUSH PRIVILEGES:** Este comando es como darle al botón de "Guardar cambios" o "Refrescar".
 
 > MySQL guarda los permisos en unas tablas internas. A veces, si no ejecutas este comando, MySQL sigue usando la configuración vieja y el usuario nuevo no puede entrar. Con esto, obligas a la base de datos a leer los nuevos permisos de inmediato.
