@@ -86,17 +86,17 @@ FLUSH PRIVILEGES;
 
 > MySQL guarda los permisos en unas tablas internas. A veces, si no ejecutas este comando, MySQL sigue usando la configuración vieja y el usuario nuevo no puede entrar. Con esto, obligas a la base de datos a leer los nuevos permisos de inmediato.
 
-Con estos comandos puede validar que tu usuario fue creado correctamente
+### Con estos comandos puede validar que tu usuario fue creado correctamente
 
-### Trae el usuario recien creado
+Trae el usuario recien creado
 ```sql
 SELECT user, host FROM mysql.user;
 ```
-### Valida los permisos
+Valida los permisos
 ```sql
 SHOW GRANTS FOR 'app_user'@'localhost';
 ```
-### Ingresar con el usuario nuevo
+Ingresar con el usuario nuevo
 ```sql 
 mysql -u web_user -p
 ```
