@@ -1,12 +1,12 @@
 # 🧪 Laboratorio de Inyección SQL (MySQL/MariaDB)
 
-Este repositorio contiene los comandos básicos y la configuración necesaria para montar un entorno de pruebas y entender los fundamentos de la extracción de datos mediante SQL Injection.
+## Este repositorio contiene los comandos básicos y la configuración necesaria para montar un entorno de pruebas y entender los fundamentos de la extracción de datos mediante SQL Injection.
 
 # 📋 Tablas de Referencia SQL
 
-## Operaciones Estándar de Base de Datos
+### Operaciones Estándar de Base de Datos
 
-### Esta tabla cubre los comandos esenciales para administrar y consultar datos de forma normal.
+Esta tabla cubre los comandos esenciales para administrar y consultar datos de forma normal.
 
 | Comando |            Propósito                   |             Ejemplo de uso                |
 | --------|:--------------------------------------:| :----------------------------------------:|
