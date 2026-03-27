@@ -70,7 +70,8 @@ FLUSH PRIVILEGES;
 SELECT user, host FROM mysql.user;
 ```
 ## Valida los permisos
-```sql SHOW GRANTS FOR 'app_user'@'localhost';
+```sql
+SHOW GRANTS FOR 'app_user'@'localhost';
 ```
 ## Ingresar con el usuario nuevo
 ```sql 
