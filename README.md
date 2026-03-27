@@ -36,12 +36,12 @@ sudo apt update && sudo apt install apache2 mariadb-server php libapache2-mod-ph
 ```
 ### Gestion de Servicios
 
-### Habilitar para que inicien con el sistema
+Habilitar para que inicien con el sistema
 ```bash
 sudo systemctl enable apache2
 sudo systemctl enable mysql
 ```
-### Arrancar los servicios ahora
+Arrancar los servicios ahora
 ```bash
 sudo systemctl start apache2
 sudo systemctl start mysql
