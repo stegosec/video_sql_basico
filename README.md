@@ -26,7 +26,7 @@ Esta tabla cubre los comandos esenciales para administrar y consultar datos de f
 | ORDER BY      |  Enumerar columnas para encontrar el ancho del SELECT | ... ORDER BY 5;                             |  
 | GROUP_CONCAT  |  Agrupar múltiples filas en una sola línea de texto.  | SELECT GROUP_CONCAT(username) FROM users;   |
 
-##  1. Configuración del Entorno Linux
+#  1. Configuración del Entorno Linux
 
 ### Primero, instalamos los servicios necesarios y los configuramos para que arranquen automáticamente.
 
@@ -36,17 +36,17 @@ sudo apt update && sudo apt install apache2 mariadb-server php libapache2-mod-ph
 ```
 ### Gestion de Servicios
 
-# Habilitar para que inicien con el sistema
+### Habilitar para que inicien con el sistema
 ```bash
 sudo systemctl enable apache2
 sudo systemctl enable mysql
 ```
-# Arrancar los servicios ahora
+### Arrancar los servicios ahora
 ```bash
 sudo systemctl start apache2
 sudo systemctl start mysql
 ```
-##  2. Setup de la Base de Datos
+#  2. Setup de la Base de Datos
 
 Creación de la base de datos
 ```sql
@@ -88,22 +88,22 @@ FLUSH PRIVILEGES;
 
 ## Con estos comandos puede validar que tu usuario fue creado correctamente
 
-## Trae el usuario recien creado
+### Trae el usuario recien creado
 ```sql
 SELECT user, host FROM mysql.user;
 ```
-## Valida los permisos
+### Valida los permisos
 ```sql
 SHOW GRANTS FOR 'app_user'@'localhost';
 ```
-## Ingresar con el usuario nuevo
+### Ingresar con el usuario nuevo
 ```sql 
 mysql -u web_user -p
 ```
 
-🛠️ 3. Comandos Básicos de Consulta
+# 🛠️ 3. Comandos Básicos de Consulta
 
-Operaciones Estándar
+## Operaciones Estándar
 
 Ver todo: `SELECT * FROM users; `
 
@@ -113,7 +113,7 @@ Técnicas de Extracción (Pentesting)
 
 Contar columnas: Se usa ORDER BY incrementando el número hasta que dé error. Esto nos permite saber el ancho de la consulta original.
 
-Unión de consultas:
+## Unión de consultas:
 
 Si el SELECT original pide 3 columnas:
 ```sql 
@@ -125,14 +125,14 @@ Si el SELECT original pide solo 1 columna:
 SELECT username FROM users WHERE id=1 UNION SELECT password FROM users;
 ```
 
-Aspiradora de datos:
+## Aspiradora de datos:
 
 Concatena todos los resultados en una sola línea usando ":" como separador (0x3a)
 ```sql
 SELECT GROUP_CONCAT(username, 0x3a, password) FROM users;
 ```
 
-🔍 4. Fingerprinting y ReconocimientoComandos útiles para obtener información sobre el servidor
+# 🔍 4. Fingerprinting y ReconocimientoComandos útiles para obtener información sobre el servidor
 
 
 | Funcion       |           Descripción            |
@@ -143,7 +143,7 @@ SELECT GROUP_CONCAT(username, 0x3a, password) FROM users;
 | @@VERSION     | Variable global de versión.      |
 
 
-🗺️ 5. Mapeo con information_schema
+# 🗺️ 5. Mapeo con information_schema
 
 El "mapa del tesoro" para descubrir tablas y columnas cuando no conocemos sus nombres.
 
