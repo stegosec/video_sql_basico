@@ -8,18 +8,18 @@ Este repositorio contiene los comandos básicos y la configuración necesaria pa
 Esta tabla cubre los comandos esenciales para administrar y consultar datos de forma normal.
 
 | Comando |            Propósito                   |             Ejemplo de uso                |
- --------- ---------------------------------------  -------------------------------------------|
+| --------|---------------------------------------| -------------------------------------------|
 | SELECT  | Recuperar o leer datos de una tabla.   | SELECT * FROM users;                      | 
 | CREATE  | Crear bases de datos o tablas nuevas.  | "CREATE TABLE logs (id INT, msg TEXT);"   |
 | INSERT  | Añadir nuevos registros a una tabla.   | INSERT INTO users (user) VALUES ('pepe'); |
 | WHERE   | Filtrar resultados bajo una condición. | SELECT * FROM users WHERE id = 1;         |
 
 
-|   Comando   |              Uso en Pentesting                        |        Ejemplo Táctico                    |
- -------------  ----------------------------------------------------- ------------------------------------------- |
-UNION SELECT  |  Combinar resultados de dos consultas distintas.      | ... UNION SELECT 1,2,3;"                  |
-ORDER BY      |  Enumerar columnas para encontrar el ancho del SELECT | ... ORDER BY 5;                           |  
-GROUP_CONCAT  |  Agrupar múltiples filas en una sola línea de texto.  | SELECT GROUP_CONCAT(username) FROM users; |
+|   Comando     |              Uso en Pentesting                        |        Ejemplo Táctico                      |
+| ------------- | ------------------------------------------------------|---------------------------------------------|
+| UNION SELECT  |  Combinar resultados de dos consultas distintas.      | ... UNION SELECT 1,2,3;"                    |
+| ORDER BY      |  Enumerar columnas para encontrar el ancho del SELECT | ... ORDER BY 5;                             |  
+| GROUP_CONCAT  |  Agrupar múltiples filas en una sola línea de texto.  | SELECT GROUP_CONCAT(username) FROM users;   |
 
 ##  1. Configuración del Entorno Linux
 
