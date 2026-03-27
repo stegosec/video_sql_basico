@@ -6,7 +6,7 @@ Este repositorio contiene los comandos básicos y la configuración necesaria pa
 
 ## Operaciones Estándar de Base de Datos
 
-Esta tabla cubre los comandos esenciales para administrar y consultar datos de forma normal.
+### Esta tabla cubre los comandos esenciales para administrar y consultar datos de forma normal.
 
 | Comando |            Propósito                   |             Ejemplo de uso                |
 | --------|:--------------------------------------:| :----------------------------------------:|
@@ -18,7 +18,7 @@ Esta tabla cubre los comandos esenciales para administrar y consultar datos de f
 
 ## Técnicas Avanzadas y Extracción (Pentesting)
 
-Estos comandos son los que usamos para manipular la salida y descubrir información oculta.
+### Estos comandos son los que usamos para manipular la salida y descubrir información oculta.
 
 |   Comando     |              Uso en Pentesting                        |        Ejemplo Táctico                      |
 | ------------- | ------------------------------------------------------|---------------------------------------------|
@@ -28,7 +28,7 @@ Estos comandos son los que usamos para manipular la salida y descubrir informaci
 
 ##  1. Configuración del Entorno Linux
 
-Primero, instalamos los servicios necesarios y los configuramos para que arranquen automáticamente.
+### Primero, instalamos los servicios necesarios y los configuramos para que arranquen automáticamente.
 
 ### Instalación de paquetes
 ```bash
