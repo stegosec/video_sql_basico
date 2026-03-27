@@ -24,7 +24,7 @@ sudo systemctl start apache2
 sudo systemctl start mysql
 
 ##  2. Setup de la Base de Datos
-
+'''sql
 -- Creación de la base de datos
 CREATE DATABASE laboratorio;
 USE laboratorio;
