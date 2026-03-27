@@ -34,7 +34,7 @@ Esta tabla cubre los comandos esenciales para administrar y consultar datos de f
 ```bash
 sudo apt update && sudo apt install apache2 mariadb-server php libapache2-mod-php php-mysql -y
 ```
-Gestion de Servicios
+### Gestion de Servicios
 
 # Habilitar para que inicien con el sistema
 ```bash
