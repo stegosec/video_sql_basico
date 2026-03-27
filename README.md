@@ -86,8 +86,6 @@ SELECT GROUP_CONCAT(username, 0x3a, password) FROM users;
 🔍 4. Fingerprinting y ReconocimientoComandos útiles para obtener información sobre el servidor
 
 
-## Tables
-
 | Funcion       |           Descripción            |
 | ------------- |:-------------------------------  |
 | USER()        | Usuario que ejecuta la consulta. |
@@ -119,9 +117,9 @@ SELECT GROUP_CONCAT(column_name) FROM information_schema.columns WHERE table_nam
 
 
 
-## Links
+# Link a la pagina de mysql
 
-Puedes consultar la guia completa en la pagina  [Markdown Live Preview]([https://markdownlivepreview.com/](https://dev.mysql.com/doc/mysql-tutorial-excerpt/8.0/en/)).
+Puedes consultar la guia completa en la pagina  [https://dev.mysql.com/doc/mysql-tutorial-excerpt/8.0/en/]).
 
 ⚠️ IMPORTANTE: Este material tiene fines exclusivamente educativos y éticos. Nunca utilices estas técnicas en
 sistemas sobre los que no tengas autorización explícita. El mal uso de esta información es responsabilidad del usuario.
