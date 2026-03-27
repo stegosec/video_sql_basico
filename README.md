@@ -137,9 +137,9 @@ SELECT GROUP_CONCAT(username, 0x3a, password) FROM users;
 
 | Funcion       |           Descripción            |
 | ------------- |:-------------------------------  |
-| USER()        | Usuario que ejecuta la consulta. |
-| DATABASE()    | Nombre de la DB actual.          |
-| VERSION()     | Versión del motor SQL.           |
+| USER( )       | Usuario que ejecuta la consulta. |
+| DATABASE( )   | Nombre de la DB actual.          |
+| VERSION( )    | Versión del motor SQL.           |
 | @@VERSION     | Variable global de versión.      |
 
 
