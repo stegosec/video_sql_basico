@@ -8,7 +8,7 @@ Este repositorio contiene los comandos básicos y la configuración necesaria pa
 Esta tabla cubre los comandos esenciales para administrar y consultar datos de forma normal.
 
 | Comando |            Propósito                   |             Ejemplo de uso                |
-| --------|---------------------------------------| -------------------------------------------|
+| --------|:--------------------------------------:| :----------------------------------------:|
 | SELECT  | Recuperar o leer datos de una tabla.   | SELECT * FROM users;                      | 
 | CREATE  | Crear bases de datos o tablas nuevas.  | "CREATE TABLE logs (id INT, msg TEXT);"   |
 | INSERT  | Añadir nuevos registros a una tabla.   | INSERT INTO users (user) VALUES ('pepe'); |
