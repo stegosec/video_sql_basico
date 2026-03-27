@@ -5,6 +5,7 @@ Este repositorio contiene los comandos básicos y la configuración necesaria pa
 # 📋 Tablas de Referencia SQL
 
 Operaciones Estándar de Base de Datos
+
 Esta tabla cubre los comandos esenciales para administrar y consultar datos de forma normal.
 
 | Comando |            Propósito                   |             Ejemplo de uso                |
@@ -16,6 +17,7 @@ Esta tabla cubre los comandos esenciales para administrar y consultar datos de f
 
 
 Técnicas Avanzadas y Extracción (Pentesting)
+
 Estos comandos son los que usamos para manipular la salida y descubrir información oculta.
 
 |   Comando     |              Uso en Pentesting                        |        Ejemplo Táctico                      |
