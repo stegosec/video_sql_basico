@@ -24,6 +24,7 @@ sudo systemctl start apache2
 sudo systemctl start mysql
 ```
 ##  2. Setup de la Base de Datos
+
 Creación de la base de datos
 ```sql
 CREATE DATABASE laboratorio;
@@ -62,6 +63,7 @@ Ver todo: `SELECT * FROM users; `
 Ordenar: ` SELECT * FROM users ORDER BY 2 ASC;` (Organiza por la segunda columna).
 
 Técnicas de Extracción (Pentesting)
+
 Contar columnas: Se usa ORDER BY incrementando el número hasta que dé error. Esto nos permite saber el ancho de la consulta original.
 
 Unión de consultas:
@@ -95,6 +97,7 @@ SELECT GROUP_CONCAT(username, 0x3a, password) FROM users;
 
 
 🗺️ 5. Mapeo con information_schema
+
 El "mapa del tesoro" para descubrir tablas y columnas cuando no conocemos sus nombres.
 
 📂 Listar Bases de Datos
@@ -117,9 +120,9 @@ SELECT GROUP_CONCAT(column_name) FROM information_schema.columns WHERE table_nam
 
 
 
-# Link a la pagina de mysql
+# Acceso a documentacion MYSQL
 
-Puedes consultar la guia completa en la pagina  [Pagina MYSQL](https://dev.mysql.com/doc/mysql-tutorial-excerpt/8.0/en/).
+Puedes consultar toda la información en la [Pagina MYSQL](https://dev.mysql.com/doc/mysql-tutorial-excerpt/8.0/en/).
 
 
 ⚠️ IMPORTANTE: Este material tiene fines exclusivamente educativos y éticos. Nunca utilices estas técnicas en
