@@ -15,6 +15,9 @@ Esta tabla cubre los comandos esenciales para administrar y consultar datos de f
 | WHERE   | Filtrar resultados bajo una condición. | SELECT * FROM users WHERE id = 1;         |
 
 
+## Técnicas Avanzadas y Extracción (Pentesting)
+## Estos comandos son los que usamos para manipular la salida y descubrir información oculta.
+
 |   Comando     |              Uso en Pentesting                        |        Ejemplo Táctico                      |
 | ------------- | ------------------------------------------------------|---------------------------------------------|
 | UNION SELECT  |  Combinar resultados de dos consultas distintas.      | ... UNION SELECT 1,2,3;"                    |
