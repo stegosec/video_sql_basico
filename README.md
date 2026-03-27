@@ -119,7 +119,7 @@ SELECT GROUP_CONCAT(column_name) FROM information_schema.columns WHERE table_nam
 
 # Link a la pagina de mysql
 
-Puedes consultar la guia completa en la pagina  [Markdown Live Preview] (https://dev.mysql.com/doc/mysql-tutorial-excerpt/8.0/en/).
+Puedes consultar la guia completa en la pagina  [Markdown Live Preview](https://dev.mysql.com/doc/mysql-tutorial-excerpt/8.0/en/).
 
 
 ⚠️ IMPORTANTE: Este material tiene fines exclusivamente educativos y éticos. Nunca utilices estas técnicas en
