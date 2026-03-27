@@ -2,6 +2,24 @@
 
 Este repositorio contiene los comandos básicos y la configuración necesaria para montar un entorno de pruebas y entender los fundamentos de la extracción de datos mediante SQL Injection.
 
+# 📋 Tablas de Referencia SQL
+
+## Operaciones Estándar de Base de Datos
+Esta tabla cubre los comandos esenciales para administrar y consultar datos de forma normal.
+
+| Comando |            Propósito                   |             Ejemplo de uso                |
+ --------- ---------------------------------------  -------------------------------------------|
+| SELECT  | Recuperar o leer datos de una tabla.   | SELECT * FROM users;                      | 
+| CREATE  | Crear bases de datos o tablas nuevas.  | "CREATE TABLE logs (id INT, msg TEXT);"   |
+| INSERT  | Añadir nuevos registros a una tabla.   | INSERT INTO users (user) VALUES ('pepe'); |
+| WHERE   | Filtrar resultados bajo una condición. | SELECT * FROM users WHERE id = 1;         |
+
+
+|   Comando   |              Uso en Pentesting                        |        Ejemplo Táctico                    |
+ -------------  ----------------------------------------------------- ------------------------------------------- |
+UNION SELECT  |  Combinar resultados de dos consultas distintas.      | ... UNION SELECT 1,2,3;"                  |
+ORDER BY      |  Enumerar columnas para encontrar el ancho del SELECT | ... ORDER BY 5;                           |  
+GROUP_CONCAT  |  Agrupar múltiples filas en una sola línea de texto.  | SELECT GROUP_CONCAT(username) FROM users; |
 
 ##  1. Configuración del Entorno Linux
 
@@ -63,7 +81,7 @@ FLUSH PRIVILEGES;
 
 > MySQL guarda los permisos en unas tablas internas. A veces, si no ejecutas este comando, MySQL sigue usando la configuración vieja y el usuario nuevo no puede entrar. Con esto, obligas a la base de datos a leer los nuevos permisos de inmediato.
 
-# Con estos comandos puede validar que tu usuario fue creado correctamente
+## Con estos comandos puede validar que tu usuario fue creado correctamente
 
 ## Trae el usuario recien creado
 ```sql
