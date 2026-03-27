@@ -4,7 +4,7 @@ Este repositorio contiene los comandos básicos y la configuración necesaria pa
 
 # 📋 Tablas de Referencia SQL
 
-Operaciones Estándar de Base de Datos
+## Operaciones Estándar de Base de Datos
 
 Esta tabla cubre los comandos esenciales para administrar y consultar datos de forma normal.
 
@@ -16,7 +16,7 @@ Esta tabla cubre los comandos esenciales para administrar y consultar datos de f
 | WHERE   | Filtrar resultados bajo una condición. | SELECT * FROM users WHERE id = 1;         |
 
 
-Técnicas Avanzadas y Extracción (Pentesting)
+## Técnicas Avanzadas y Extracción (Pentesting)
 
 Estos comandos son los que usamos para manipular la salida y descubrir información oculta.
 
