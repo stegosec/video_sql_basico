@@ -92,4 +92,5 @@ SELECT GROUP_CONCAT(table_name) FROM information_schema.tables WHERE table_schem
 SELECT GROUP_CONCAT(column_name) FROM information_schema.columns WHERE table_name = 'users';
 
 
-⚠️ IMPORTANTE: Este material tiene fines exclusivamente educativos y éticos. Nunca utilices estas técnicas en sistemas sobre los que no tengas autorización explícita. El mal uso de esta información es responsabilidad del usuario.
+⚠️ IMPORTANTE: Este material tiene fines exclusivamente educativos y éticos. Nunca utilices estas técnicas en
+sistemas sobre los que no tengas autorización explícita. El mal uso de esta información es responsabilidad del usuario.
